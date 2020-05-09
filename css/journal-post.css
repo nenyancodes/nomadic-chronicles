@@ -22,7 +22,7 @@ main {
 
 /* JUMBOTRON */
 
-.jumbotron-cover {
+.jumbotron__cover {
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
@@ -36,7 +36,7 @@ main {
 
 /* jeden ze sposobów na zrobienie trójkąta */
 
-.jumbotron-cover::after {
+.jumbotron__cover::after {
   content: "";
   width: 0;
   height: 0;
@@ -49,23 +49,23 @@ main {
 
 /* NAVIGATION */
 
-.jumbotron-nav {
+.jumbotron__navigation {
   width: 100%;
   height: 8rem;
   background-color: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
 }
 
-.jumbotron-nav ul {
+.navigation__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.jumbotron-nav li {
+.navigation__list-item {
   margin: 0 1.2em;
 }
 
-.jumbotron-nav_link {
+.navigation__list-item__link {
   font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
   font-weight: 200;
   font-size: 1rem;
@@ -76,11 +76,11 @@ main {
   transition: 0.5s;
 }
 
-.jumbotron-nav_link:hover {
+.navigation__list-item__link:hover {
   color: #ffbd24;
 }
 
-.jumbotron-nav img {
+.navigation__list-item__img {
   width: 250px;
 }
 
