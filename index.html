@@ -78,74 +78,88 @@
     </header>
 
     <main class="journal">
-      <figure class="journal-title_logo-wrapper">
-        <img
-          src="/images/ania_logo_hands_all_S.png"
-          alt="Ania Wójtowicz logo"
-          srcset="/images/ania_logo_hands_retina_S.png 2x"
-          class="journal-title_logo"
-        />
-      </figure>
-      <h1 class="journal-title">Powrót do przeszłości</h1>
+      <header class="journal-header">
+        <div class="journal-header__logo-wrapper">
+          <img
+            src="/images/ania_logo_hands_all_S.png"
+            alt="Ania Wójtowicz logo"
+            srcset="/images/ania_logo_hands_retina_S.png 2x"
+            class="journal-header__logo-img"
+          />
+        </div>
+        <h1 class="journal-header__title">Powrót do przeszłości</h1>
 
-      <div class="journal-preface">
-        <section
-          class="journal-preface_info"
-          aria-label="Travel date and location"
-        >
-          <article class="info-date" aria-label="Date: 2018-08-29">
-            <!-- wprowadzone, by dało się rozsunąć literki idealnie do granic diva-parenta za pomocą flexa z justify content: flex-between -->
-            <div class="info-date--month">
-              <span>A</span>
-              <span>U</span>
-              <span>G</span>
+        <div class="journal-header__preface">
+          <section class="preface__info" aria-label="Travel date and location">
+            <div
+              class="preface__info-date__wrapper"
+              aria-label="Date: 2018-08-29"
+            >
+              <!-- wprowadzone, by dało się rozsunąć literki idealnie do granic diva-parenta za pomocą flexa z justify content: flex-between -->
+              <div class="preface__info-date info-date--month">
+                <span>A</span>
+                <span>U</span>
+                <span>G</span>
+              </div>
+              <div class="preface__info-date info-date--day">
+                <span>2</span>
+                <span>9</span>
+              </div>
+              <div class="preface__info-date info-date--year">
+                <span>2</span>
+                <span>0</span>
+                <span>1</span>
+                <span>8</span>
+              </div>
             </div>
-            <div class="info-date--day">
-              <span>2</span>
-              <span>9</span>
+            <div
+              class="preface__info-location"
+              aria-label="Location: Sichuan, China"
+            >
+              <span class="preface__info-location__country">Chiny</span>
+              <span class="preface__info-location__region"><b>Syczuan</b></span>
             </div>
-            <div class="info-date--year">
-              <span>2</span>
-              <span>0</span>
-              <span>1</span>
-              <span>8</span>
-            </div>
-          </article>
-          <article class="info-location" aria-label="Location: Sichuan, China">
-            <span class="info-location--country">Chiny</span>
-            <span class="info-location--region"><b>Syczuan</b></span>
-          </article>
-        </section>
+          </section>
 
-        <p class="journal-preface_text">
-          Gdy kilka lat temu napatoczyłam się gdzieś w internetach na fotografię
-          wykonaną w tym właśnie miejscu, początkowo byłam święcie przekonana,
-          że to kadr z jakiegoś hollywoodzkiego filmu o rewolucji kulturalnej
-          czy innym Chinatown... Większość miejsc takich jak to - miejsc
-          przesiąkniętych "duchem maoistowskiej rewolucji" - zniknęła z mapy
-          Chin wraz z ich rozwojem gospodarczym. Oryginalne plakaty z czasów
-          wodza Mao nie wiszą już przecież na ścianach. Można je za to kupić w
-          Muzeum Propagandy w Szanghaju za kilka tysięcy złotych
-          <i>per poster</i>
-          [sic!] Mój detektywistyczno-logistyczny rozumek nie dawał jednak za
-          wygraną i kazał szukać, i szukać, i szukać tego miejsca głęboko w
-          czeluściach chińskiego internetu… I okazało się, że ta magiczna
-          herbaciarnia istnieje sobie gdzieś naprawdę. <br />
-          Potrzebowałam jedyne 3.5 roku by ją znaleźć.
-        </p>
+          <p class="preface__text">
+            Gdy kilka lat temu napatoczyłam się gdzieś w internetach na
+            fotografię wykonaną w tym właśnie miejscu, początkowo byłam święcie
+            przekonana, że to kadr z jakiegoś hollywoodzkiego filmu o rewolucji
+            kulturalnej czy innym Chinatown... Większość miejsc takich jak to -
+            miejsc przesiąkniętych "duchem maoistowskiej rewolucji" - zniknęła z
+            mapy Chin wraz z ich rozwojem gospodarczym. Oryginalne plakaty z
+            czasów wodza Mao nie wiszą już przecież na ścianach. Można je za to
+            kupić w Muzeum Propagandy w Szanghaju za kilka tysięcy złotych
+            <i>per poster</i>
+            [sic!] Mój detektywistyczno-logistyczny rozumek nie dawał jednak za
+            wygraną i kazał szukać, i szukać, i szukać tego miejsca głęboko w
+            czeluściach chińskiego internetu… I okazało się, że ta magiczna
+            herbaciarnia istnieje sobie gdzieś naprawdę. <br />
+            Potrzebowałam jedyne 3.5 roku by ją znaleźć.
+          </p>
 
-        <aside class="journal-preface_socialmedia">
-          <a
-            href="https://www.instagram.com/aniawojtowicz_photostories/"
-            target="blank"
-            ><span class="fab fa-instagram"></span
-          ></a>
-          <a href=""><span class="fab fa-facebook-square"></span></a>
-          <a href=""><span class="fab fa-twitter-square"></span></a>
-          <a href=""><span class="fas fa-envelope-square"></span></a>
-          <a href=""><span class="fab fa-github-square"></span></a>
-        </aside>
-      </div>
+          <aside class="preface__socialmedia">
+            <a
+              href="https://www.instagram.com/aniawojtowicz_photostories/"
+              target="blank"
+              class="preface__socialmedia__link"
+              ><span class="fab fa-instagram"></span
+            ></a>
+            <a href="#" class="preface__socialmedia__link"
+              ><span class="fab fa-facebook-square"></span
+            ></a>
+            <a href="#" class="preface__socialmedia__link"
+              ><span class="fab fa-twitter-square"></span
+            ></a>
+            <a href="#" class="preface__socialmedia__link"
+              ><span class="fas fa-envelope-square"></span
+            ></a>
+            <a href="#" class="preface__socialmedia__link"
+              ><span class="fab fa-github-square"></span
+            ></a>
+          </aside>
+        </div>
+      </header>
 
       <section class="journal-post">
         <h2 class="journal-post_title">where the streets have no names</h2>
