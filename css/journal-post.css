@@ -304,7 +304,7 @@ strong {
 
 /* TOP - fixed button */
 
-.top-btn {
+.top-button {
   width: 1.8em;
   height: 1.8em;
   position: fixed;
@@ -318,7 +318,7 @@ strong {
   z-index: 1;
 }
 
-.top-btn a {
+.top-button__text {
   color: white;
 }
 
