@@ -208,7 +208,7 @@ body {
 
 /* JOURNAL POST - TEXT & TITLES */
 
-.journal-post_text {
+.journal-post__text {
   width: 55vw;
   padding: 0.5rem 0;
 }
@@ -243,7 +243,7 @@ strong {
 
 /* highlighted textarea */
 
-.highlight_container {
+.journal-post__highlight__container {
   width: 75%;
   display: flex;
   justify-content: space-around;
@@ -251,7 +251,7 @@ strong {
   margin: 2em 0;
 }
 
-.highlight_text {
+.journal-post__highlight {
   width: 75%;
   font-family: "Roboto Condensed";
   font-weight: bold;
@@ -260,7 +260,7 @@ strong {
   text-align: center;
 }
 
-.arrow {
+.journal-post__highlight__arrow {
   color: #cccccc;
 }
 
