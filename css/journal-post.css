@@ -1,10 +1,13 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
   /*hide horizontal scrollbar */
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
