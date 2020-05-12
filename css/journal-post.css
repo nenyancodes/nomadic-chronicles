@@ -425,6 +425,9 @@ strong {
   -webkit-clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 100% 100%, 0% 100%);
 }
 
+.footer__socialmedia {
+  margin-bottom: 1rem;
+}
 .footer__socialmedia__link {
   font-size: 1.5rem;
   color: #ddd;
