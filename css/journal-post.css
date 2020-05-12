@@ -11,12 +11,13 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  background-color: #fff;
   font-family: "EB Garamond", "PT Serif", serif;
   font-size: 20px;
   line-height: 1.6em;
   text-align: justify;
   color: #303030;
-  background-color: #fff;
 }
 
 .journal {
@@ -261,15 +262,34 @@ strong {
 
 /* JOURNAL - IMAGES */
 
-.journal-gallery {
+.gallery {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin: 5rem 0;
 }
 
-.journal-gallery img {
+.gallery--wrap {
+  flex-wrap: wrap;
+}
+
+.gallery img {
   display: block;
   max-width: 100%;
-  margin: 3px;
+}
+
+.gallery__picture {
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 3px;
+}
+
+.picture--1of3 {
+  flex-basis: 33%;
+}
+
+.picture--1of2 {
+  flex-basis: 50%;
 }
 
 /* many pics in a row */
@@ -296,6 +316,44 @@ strong {
 .journal-gallery--2pics {
   flex-basis: 49.8%;
 }
+
+/* JOURNAL - IMAGES
+
+.journal-gallery {
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.journal-gallery img {
+  display: block;
+  max-width: 100%;
+  margin: 3px;
+} */
+
+/* many pics in a row */
+
+/* .gallery_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery_container--4pics {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.journal-gallery--3pics {
+  flex-basis: 33%;
+}
+
+.journal-gallery--2pics {
+  flex-basis: 49.8%;
+} */
 
 /* titbit */
 
