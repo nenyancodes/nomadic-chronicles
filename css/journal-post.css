@@ -12,6 +12,10 @@ html {
 
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
   background-color: #fff;
   font-family: "EB Garamond", "PT Serif", serif;
   font-size: 20px;
