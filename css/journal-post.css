@@ -24,13 +24,13 @@ body {
   color: #303030;
 }
 
-.journal {
+.main {
   width: 100%;
 }
 
 /* JUMBOTRON */
 
-.jumbotron__cover {
+.cover {
   height: 99.95vh;
   background-size: cover;
   background-position: bottom;
@@ -38,13 +38,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.china-teahouse {
+.cover--chinese-teahouse {
   background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
 }
 
 /* jeden ze sposobów na zrobienie trójkąta */
 
-.jumbotron__cover::after {
+.cover::after {
   content: "";
   width: 0;
   height: 0;
@@ -85,7 +85,7 @@ body {
   margin: 0.5rem 2rem 0;
 }
 
-/* BORDERS */
+/* nav links border transformations */
 
 .navigation__link::before,
 .navigation__link::after {
@@ -115,28 +115,26 @@ body {
   transform: translateY(0px);
 }
 
-/* JOURNAL POST - CONTAINER */
+/* JOURNAL ARTICLE - TITLE */
 
-.journal-post {
-  width: 90vw;
-  margin: 0 auto;
+.article {
+  width: 100%;
+  max-width: 3072px;
+}
+
+.article-header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* JOURNAL POST - TITLE */
-
-.journal-header__logo-wrapper {
   background-color: #f5f5f5;
 }
 
-.journal-header__logo-img {
-  display: block;
-  margin: 0 auto;
+.article-header__logo {
+  background-color: #f5f5f5;
 }
 
-.journal-header__title {
+.article-header__title {
   padding: 1rem 0 1.5rem 0;
   background-color: #f5f5f5;
   text-align: center;
@@ -171,7 +169,7 @@ body {
 }
 
 .preface__info,
-.preface__socialmedia {
+.preface-media {
   flex-basis: 22.5%;
   display: flex;
   flex-direction: column;
@@ -180,7 +178,7 @@ body {
   margin-top: 1em;
 }
 
-.preface__date {
+.preface-date {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,13 +192,13 @@ body {
   text-align: justify;
 }
 
-.date__month {
+.preface-date__month {
   display: inline-block;
   width: 3rem;
   overflow: hidden;
 }
 
-.date__day {
+.preface-date__day {
   font-size: 2.8rem;
   line-height: 2.8rem;
   display: inline-block;
@@ -209,7 +207,7 @@ body {
   overflow: hidden;
 }
 
-.date__year {
+.preface-date__year {
   font-size: 1rem;
   line-height: 1.8rem;
   display: inline-block;
@@ -217,7 +215,7 @@ body {
   overflow: hidden;
 }
 
-.preface__location {
+.preface-location {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,7 +229,7 @@ body {
   text-transform: uppercase;
 }
 
-.preface__socialmedia {
+.preface-media {
   height: 8rem;
   display: flex;
   flex-direction: column;
@@ -239,7 +237,7 @@ body {
   align-content: center;
 }
 
-.preface__socialmedia__link {
+.preface-media__link {
   display: block;
   padding: 0.2rem 0.4rem;
   font-size: 1.5em;
@@ -247,19 +245,29 @@ body {
   transition: 0.3s;
 }
 
-.preface__socialmedia__link:hover,
-.preface__socialmedia__link:active {
+.preface-media__link:hover,
+.preface-media__link:active {
   color: #ffbd24;
+}
+
+/* JOURNAL TEXT - CONTAINER */
+
+.journal {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* JOURNAL POST - TEXT & TITLES */
 
-.journal-post__text {
+.journal__text {
   width: 55vw;
   padding: 0.5rem 0;
 }
 
-h2 {
+.journal__title {
   font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
   font-weight: 700;
   color: #3a3a3c;
@@ -279,9 +287,9 @@ strong {
   font-weight: bold;
 }
 
-/* highlighted textarea */
+/* TEXT HIGHLIGHT */
 
-.journal-post__highlight__container {
+.highlight {
   width: 75%;
   display: flex;
   justify-content: space-around;
@@ -289,7 +297,7 @@ strong {
   margin: 2em 0;
 }
 
-.journal-post__highlight {
+.highlight__text {
   width: 75%;
   font-family: "Roboto Condensed";
   font-weight: bold;
@@ -298,11 +306,11 @@ strong {
   text-align: center;
 }
 
-.journal-post__highlight__arrow {
+.highlight__arrow {
   color: #cccccc;
 }
 
-/* JOURNAL - IMAGES */
+/* GALLERIES */
 
 .gallery {
   display: flex;
@@ -320,18 +328,22 @@ strong {
   max-width: 100%;
 }
 
-.gallery__picture {
+.gallery__photo-fullwidth {
   flex-basis: 100%;
   flex-grow: 1;
   padding: 3px;
 }
 
-.picture--1of3 {
+.gallery__photo-1of3 {
   flex-basis: 33%;
+  flex-grow: 1;
+  padding: 3px;
 }
 
-.picture--1of2 {
+.gallery__photo-1of2 {
   flex-basis: 50%;
+  flex-grow: 1;
+  padding: 3px;
 }
 
 /* CALLOUT */
@@ -395,7 +407,7 @@ strong {
   height: 3rem;
 }
 
-/* TOP - fixed button */
+/* TOP BUTTON - fixed */
 
 .top-button {
   width: 1.8em;
@@ -417,7 +429,7 @@ strong {
 
 /* FOOTER */
 
-.journal-footer {
+.footer {
   width: 100%;
   height: 20vh;
   background-color: #222;
@@ -429,19 +441,19 @@ strong {
   -webkit-clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 100% 100%, 0% 100%);
 }
 
-.footer__socialmedia {
+.footer-media {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.footer__socialmedia__link {
+.footer-media__link {
   font-size: 1.5rem;
   color: #ddd;
   margin: 1rem 0.2rem 0.5rem 0.2rem;
   transition: 0.3s;
 }
 
-.footer__socialmedia__link:hover {
+.footer-media__link:hover {
   color: #ffbd24;
 }
 
