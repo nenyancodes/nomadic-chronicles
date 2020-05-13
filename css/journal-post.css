@@ -400,7 +400,7 @@ strong {
   height: 5rem;
   border-radius: 50%;
   background-color: #bce1e5;
-  box-shadow: -5px 5px 15px #ccc;
+  box-shadow: -5px 5px 10px #ccc;
 }
 
 .callout__icon {
