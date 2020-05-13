@@ -32,6 +32,7 @@ body {
 
 .cover {
   height: 99.95vh;
+  background-color: #000;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
