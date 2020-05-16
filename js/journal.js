@@ -3,7 +3,7 @@ let callout = document.querySelector(".callout--js");
 let calloutContent = `
    <div>
       <img src="/images/eureka.png" alt="icon" class="callout__icon"
-      srcset="/images/eureka-2x.png 2x">
+      srcset="/images/eureka 2x.png 2x">
    </div>
    <div class="callout__wrapper">
       <h3 class="callout__title">
