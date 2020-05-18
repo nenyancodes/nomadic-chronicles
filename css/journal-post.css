@@ -466,3 +466,63 @@ strong {
   line-height: 1.2rem;
   font-weight: 400;
 }
+
+@media screen and (max-width: 1326px) {
+  body {
+    font-size: 18px;
+  }
+  /* JUMBOTRON */
+
+  .cover {
+    height: 79.95vh;
+  }
+
+  .cover--chinese-teahouse {
+    background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
+  }
+
+  /* jeden ze sposobów na zrobienie trójkąta */
+
+  .cover::after {
+    top: 70vh;
+  }
+
+  /* preface & asides */
+
+  .preface {
+    width: 65vw;
+    line-height: 1.6rem;
+  }
+
+  .info,
+  .social-media {
+    flex-basis: 15%;
+  }
+
+  .info__date__month {
+    font-size: 1.2rem;
+  }
+
+  /* JOURNAL TEXT - CONTAINER */
+
+  .journal {
+    width: 90vw;
+  }
+
+  /* JOURNAL POST - TEXT & TITLES */
+
+  .journal__text {
+    width: 65vw;
+  }
+
+  /* CALLOUT */
+
+  .callout {
+    align-items: center;
+    width: 70vw;
+  }
+
+  .callout__wrapper {
+    flex-basis: 60%;
+  }
+}
