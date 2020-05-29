@@ -686,6 +686,28 @@ strong {
   color: #cccccc;
 }
 
+@media screen and (max-width: 768px) {
+  .highlight__text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .highlight {
+    margin: 1em 0;
+  }
+  .highlight__text {
+    font-size: 0.9rem;
+    line-height: 1.4em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .highlight__text {
+    width: 60%;
+  }
+}
+
 /* GALLERIES */
 
 .gallery {
@@ -870,4 +892,19 @@ strong {
   font-size: 0.8rem;
   line-height: 1.2rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 380px) {
+}
+
+@media screen and (max-width: 340px) {
 }
