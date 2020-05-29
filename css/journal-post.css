@@ -33,7 +33,13 @@ body {
   position: relative;
 }
 
-/* JUMBOTRON */
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* COVER & NAVIGATION */
 
 .cover {
   grid-area: header;
@@ -62,6 +68,34 @@ body {
   border-right: 49.5vw solid transparent;
   border-bottom: 10vh solid #f5f5f5;
 } */
+
+@media screen and (max-width: 1200px) {
+  .cover {
+    height: 79.95vh;
+  }
+
+  .cover--chinese-teahouse {
+    background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
+  }
+
+  .cover::after {
+    top: 70vh;
+  }
+}
+
+@media screen and (max-width: 1036px) {
+  .cover {
+    height: 59.95vh;
+  }
+
+  .cover--chinese-teahouse {
+    background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
+  }
+
+  .cover::after {
+    top: 50vh;
+  }
+}
 
 /* NAVIGATION */
 
@@ -123,7 +157,14 @@ body {
   transform: translateY(0px);
 }
 
-/* JOURNAL ARTICLE & WRAPPRER */
+@media screen and (max-width: 1036px) {
+  .navigation__link {
+    margin: 0 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* JOURNAL ARTICLE & WRAPPER */
 
 .article {
   width: 100%;
@@ -140,7 +181,7 @@ body {
   grid-column-gap: 32px;
   justify-content: center;
   justify-items: center;
-  padding: 5em 0;
+  padding: 3em 0 6em 0;
   /* 2 sposób na zrobienie trójkąta-wielokąta w CSS */
   clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 50% 85%, 0% 100%);
   -webkit-clip-path: polygon(
@@ -154,7 +195,50 @@ body {
   background-color: #f5f5f5;
 }
 
-/* ARTICLE TITLE & PREFACE */
+@media screen and (max-width: 1036px) {
+  .wrapper {
+    max-width: 100vw;
+    position: absolute;
+    top: -6em;
+    left: 0;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    /* 2 sposób na zrobienie trójkąta-wielokąta w CSS */
+    clip-path: polygon(0% 10%, 50% 0%, 100% 10%, 100% 100%, 50% 90%, 0% 100%);
+    -webkit-clip-path: polygon(
+      0% 10%,
+      50% 0%,
+      100% 10%,
+      100% 100%,
+      50% 90%,
+      0% 100%
+    );
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 100vw;
+    position: absolute;
+    top: -6em;
+    left: 0;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    padding: 1.5rem 0;
+    /* 2 sposób na zrobienie trójkąta-wielokąta w CSS */
+    clip-path: polygon(0% 5%, 50% 0%, 100% 5%, 100% 100%, 50% 95%, 0% 100%);
+    -webkit-clip-path: polygon(
+      0% 10%,
+      50% 0%,
+      100% 10%,
+      100% 100%,
+      50% 90%,
+      0% 100%
+    );
+  }
+}
+
+/* ARTICLE HEADER & PREFACE */
 
 .article-header {
   grid-column: 1 / -1;
@@ -189,6 +273,70 @@ body {
   font-weight: 500;
 }
 
+@media screen and (max-width: 1200px) {
+  .preface {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1036px) {
+  .article-header__title {
+    padding-bottom: 1rem;
+  }
+
+  .preface {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .article-header__title {
+    font-size: 1.5rem;
+    padding-bottom: 4px;
+  }
+
+  .preface {
+    grid-column: 1 / -1;
+    padding-bottom: 3em;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .article-header__title {
+    font-size: 1.4rem;
+    padding-bottom: 2px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .preface {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .article-header__title {
+    font-size: 1rem;
+    line-height: 1.2em;
+    padding-bottom: 0;
+  }
+
+  .article-header__logo {
+    display: none;
+  }
+
+  .preface {
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+  }
+}
+
 /* JOURNAL POST - ASIDES */
 
 .info {
@@ -200,6 +348,8 @@ body {
   align-content: start;
   margin-top: 1em;
 }
+
+/* date */
 
 .info-date {
   display: flex;
@@ -236,6 +386,8 @@ body {
   overflow: hidden;
 }
 
+/* location */
+
 .info-location {
   display: flex;
   flex-direction: column;
@@ -250,6 +402,8 @@ body {
   color: #3a3a3c;
   text-transform: uppercase;
 }
+
+/* social-media */
 
 .social-media {
   width: 100px;
@@ -276,12 +430,136 @@ body {
   color: #ffbd24;
 }
 
+@media screen and (max-width: 1036px) {
+  .info {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .info::after {
+    content: "";
+    position: absolute;
+    top: 0.8rem;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3a3a3c;
+  }
+
+  .info-date {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 0;
+    padding-right: 2rem;
+  }
+
+  .info-date__month,
+  .info-date__day,
+  .info-date__year {
+    display: inline-block;
+    width: auto;
+    margin: 0 0.2rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: visible;
+  }
+
+  .info-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+    padding-left: 2.5rem;
+    border-top: none;
+    border-bottom: none;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .info-location__country {
+    padding-right: 0.3rem;
+  }
+
+  .social-media {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info::after {
+    top: 0.75rem;
+    width: 8px;
+    height: 8px;
+  }
+
+  .info-date {
+    width: 100px;
+    padding-right: 1rem;
+  }
+
+  .info-date__month,
+  .info-date__day,
+  .info-date__year {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .info-location {
+    width: 100px;
+    padding-left: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+@media screen and(max-width: 420px) {
+  .info {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .info::after {
+    top: 0.8rem;
+    width: 4px;
+    height: 4px;
+  }
+
+  .info-date {
+    padding-right: 0.3rem;
+  }
+
+  .info-date__month,
+  .info-date__day,
+  .info-date__year {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+
+  .info-location {
+    width: 100px;
+    padding-left: 1.2rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+}
+
 /* JOURNAL TEXT - CONTAINER */
 
 .journal {
   width: 90vw;
   margin: 0 auto;
-  padding-top: 480px;
+  padding-top: 450px;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-gap: 16px 0.5rem;
@@ -290,8 +568,6 @@ body {
 .journal > * {
   grid-column: 2 / -2;
 }
-
-/* JOURNAL POST - TEXT & TITLES */
 
 .journal__title {
   font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
@@ -302,6 +578,74 @@ body {
   padding: 1rem 0;
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 1036px) {
+  .journal {
+    width: 100%;
+    padding-top: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .journal {
+    max-width: 100vw;
+    padding-top: 360px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5rem;
+    justify-items: center;
+    margin: 0;
+  }
+
+  .journal > * {
+    grid-column: 1 / -1;
+  }
+
+  .journal__title {
+    font-size: 1.2rem;
+  }
+
+  .journal__text {
+    width: 80%;
+    max-width: 80%;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .journal {
+    padding-top: 380px;
+  }
+
+  .journal__title {
+    font-size: 1.2rem;
+  }
+
+  .journal__text {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .journal {
+    padding-top: 430px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .journal {
+    padding-top: 470px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .journal {
+    padding-top: 280px;
+  }
+}
+
+/* SPECIAL */
 
 i,
 em {
@@ -440,6 +784,28 @@ strong {
   height: 3rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .callout {
+    align-items: center;
+    width: 70vw;
+  }
+
+  .callout__wrapper {
+    flex-basis: 60%;
+  }
+}
+
+@media screen and (max-width: 1036px) {
+  .callout {
+    align-items: center;
+    width: 80vw;
+  }
+
+  .callout__wrapper {
+    flex-basis: 60%;
+  }
+}
+
 /* TOP BUTTON - fixed */
 
 .top-button {
@@ -498,169 +864,3 @@ strong {
   line-height: 1.2rem;
   font-weight: 400;
 }
-
-@media screen and (max-width: 1200px) {
-  body {
-    font-size: 18px;
-  }
-
-  .cover {
-    height: 79.95vh;
-  }
-
-  .cover--chinese-teahouse {
-    background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
-  }
-
-  .cover::after {
-    top: 70vh;
-  }
-
-  .preface {
-    width: 70vw;
-  }
-
-  .callout {
-    align-items: center;
-    width: 70vw;
-  }
-
-  .callout__wrapper {
-    flex-basis: 60%;
-  }
-}
-
-@media screen and (max-width: 1036px) {
-  .cover {
-    height: 59.95vh;
-  }
-
-  .cover--chinese-teahouse {
-    background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
-  }
-
-  .cover::after {
-    top: 50vh;
-  }
-
-  .navigation__link {
-    margin: 0 0.8rem;
-    font-size: 0.9rem;
-  }
-
-  .wrapper {
-    position: absolute;
-    top: -6em;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5em 0;
-    /* 2 sposób na zrobienie trójkąta-wielokąta w CSS */
-    clip-path: polygon(0% 10%, 50% 0%, 100% 10%, 100% 100%, 50% 90%, 0% 100%);
-    -webkit-clip-path: polygon(
-      0% 10%,
-      50% 0%,
-      100% 10%,
-      100% 100%,
-      50% 90%,
-      0% 100%
-    );
-  }
-
-  .article-header__title {
-    padding-bottom: 1rem;
-  }
-
-  .preface {
-    width: 80%;
-    font-size: 1rem;
-    line-height: 1.8rem;
-  }
-
-  .info {
-    width: 80%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-
-  .info::after {
-    content: "";
-    position: absolute;
-    top: 0.8rem;
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #3a3a3c;
-  }
-
-  .info-date {
-    width: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 0;
-    padding-right: 2rem;
-  }
-
-  .info-date__month,
-  .info-date__day,
-  .info-date__year {
-    display: inline-block;
-    width: auto;
-    margin: 0 0.2rem;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    white-space: nowrap;
-    overflow: visible;
-  }
-
-  .info-location {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 150px;
-    padding-left: 2.5rem;
-    /* border-left: 3px dotted #3a3a3c; */
-    border-top: none;
-    border-bottom: none;
-    font-size: 1rem;
-    line-height: 1.2rem;
-  }
-
-  .info-location__country,
-  .info-location__region {
-    padding: 0 0.2rem;
-  }
-
-  .social-media {
-    display: none;
-  }
-
-  .journal {
-    width: 100%;
-    padding-top: 550px;
-  }
-
-  .callout {
-    align-items: center;
-    width: 80vw;
-  }
-
-  .callout__wrapper {
-    flex-basis: 60%;
-  }
-}
-
-/* @media screen and (max-width: 768px) {
-  .journal > * {
-    grid-column: 1 / -1;
-  }
-} */
