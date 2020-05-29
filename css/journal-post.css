@@ -687,6 +687,9 @@ strong {
 }
 
 @media screen and (max-width: 768px) {
+  .highlight {
+    width: 80%;
+  }
   .highlight__text {
     font-size: 1rem;
   }
@@ -695,15 +698,30 @@ strong {
 @media screen and (max-width: 600px) {
   .highlight {
     margin: 1em 0;
+    width: 90%;
   }
   .highlight__text {
     font-size: 0.9rem;
     line-height: 1.4em;
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 500px) {
+  .highlight {
+    margin: 1em 0;
+  }
   .highlight__text {
+    font-size: 0.8rem;
+    line-height: 1.3em;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .highlight__text {
+    font-size: 0.8rem;
+    line-height: 1.2em;
     width: 60%;
   }
 }
