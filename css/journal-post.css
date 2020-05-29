@@ -481,13 +481,10 @@ strong {
   font-weight: 400;
 }
 
-/*
-
- @media screen and (max-width: 1326px) {
+@media screen and (max-width: 1200px) {
   body {
     font-size: 18px;
   }
-
 
   .cover {
     height: 79.95vh;
@@ -497,41 +494,13 @@ strong {
     background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
   }
 
- 
-
   .cover::after {
     top: 70vh;
   }
 
-
-
   .preface {
-    width: 65vw;
-    line-height: 1.6rem;
+    width: 70vw;
   }
-
-  .info,
-  .social-media {
-    flex-basis: 15%;
-  }
-
-  .info__date__month {
-    font-size: 1.2rem;
-  }
-
-
-
-  .journal {
-    width: 90vw;
-  }
-
- 
-
-  .journal__text {
-    width: 65vw;
-  }
-
-
 
   .callout {
     align-items: center;
@@ -543,12 +512,7 @@ strong {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  body {
-    font-size: 18px;
-  }
-
-
+@media screen and (max-width: 1036px) {
   .cover {
     height: 59.95vh;
   }
@@ -557,25 +521,119 @@ strong {
     background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
   }
 
-  
-
   .cover::after {
     top: 50vh;
   }
 
-  
+  .navigation__link {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  .article-header__title {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3a3a3c;
+    text-transform: uppercase;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5em;
+    /* 2 sposób na zrobienie trójkąta-wielokąta w CSS */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);
+    background-color: #f5f5f5;
+  }
+
+  .preface {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .info {
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .info::after {
+    content: "";
+    position: absolute;
+    top: 0.8rem;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3a3a3c;
+  }
+
+  .info-date {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 0;
+    padding-right: 2rem;
+  }
+
+  .info-date__month,
+  .info-date__day,
+  .info-date__year {
+    display: inline-block;
+    width: auto;
+    margin: 0 0.2rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: visible;
+  }
+
+  .info-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+    padding-left: 2.5rem;
+    /* border-left: 3px dotted #3a3a3c; */
+    border-top: none;
+    border-bottom: none;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .info-location__country,
+  .info-location__region {
+    padding: 0 0.2rem;
+  }
+
+  .social-media {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .social-media__link {
+    display: none;
+    display: block;
+    font-size: 1.5em;
+    color: #303030;
+    transition: 0.2s;
+  }
 
   .journal {
-    width: 100vw;
+    width: 100%;
   }
-
-
-
-  .journal__text {
-    width: 80vw;
-  }
-
-
 
   .callout {
     align-items: center;
@@ -585,6 +643,4 @@ strong {
   .callout__wrapper {
     flex-basis: 60%;
   }
-} 
-
-*/
+}
