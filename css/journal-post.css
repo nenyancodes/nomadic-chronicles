@@ -620,16 +620,19 @@ body {
   .journal__title {
     font-size: 1.2rem;
   }
-
-  .journal__text {
-    font-size: 1rem;
-    line-height: 1.4rem;
-  }
 }
 
 @media screen and (max-width: 500px) {
   .journal {
     padding-top: 430px;
+  }
+
+  .journal__title {
+    font-size: 1rem;
+  }
+  .journal__text {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
   }
 }
 
@@ -642,6 +645,10 @@ body {
 @media screen and (max-width: 340px) {
   .journal {
     padding-top: 280px;
+  }
+  .journal__title {
+    font-size: 0.9rem;
+    padding-bottom: 0;
   }
 }
 
