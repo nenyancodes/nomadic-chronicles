@@ -892,6 +892,98 @@ strong {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .callout {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 2rem;
+  }
+
+  .callout__wrapper {
+    flex-basis: 100%;
+    padding-bottom: 20px;
+  }
+
+  .callout__image {
+    padding-left: 0;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .callout__title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .callout__title {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .callout__description {
+    font-size: 0.8rem;
+    line-height: 1.2em;
+    padding-top: 0.6rem;
+    text-align: left;
+  }
+
+  .callout div:first-child {
+    left: 285px;
+    width: 4.5rem;
+    height: 4.5rem;
+    box-shadow: 3px 3px 6px #ccc;
+  }
+
+  .callout__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .callout__title {
+    font-size: 0.9rem;
+  }
+
+  .callout__description {
+    font-size: 0.6rem;
+    line-height: 1.2em;
+    padding-top: 0.4rem;
+  }
+
+  .callout div:first-child {
+    left: 245px;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .callout__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .callout div:first-child {
+    left: 225px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .callout div:first-child {
+    left: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .callout div:first-child {
+    left: 160px;
+  }
+}
+
 /* TOP BUTTON - fixed */
 
 .top-button {
