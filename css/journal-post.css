@@ -318,8 +318,8 @@ body {
   }
 
   .preface {
-    font-size: 0.6rem;
-    line-height: 0.9rem;
+    font-size: 0.7rem;
+    line-height: 1rem;
   }
 }
 
@@ -630,10 +630,11 @@ body {
 
 @media screen and (max-width: 340px) {
   .journal {
-    padding-top: 280px;
+    padding-top: 320px;
   }
   .journal__title {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
     padding-bottom: 0;
   }
 }
