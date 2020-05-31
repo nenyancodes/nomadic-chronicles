@@ -21,6 +21,13 @@ let calloutContent = `
 
 callout.innerHTML = calloutContent;
 
+const hamburger = document.querySelector(".hamburger");
+
+hamburger.addEventListener("click", function () {
+  const nav = document.querySelector(".navigation--js");
+  nav.classList.toggle("navigation--open");
+});
+
 // const greetUser = () => {
 //   const userName = prompt(`Hi! What's your name?`);
 
