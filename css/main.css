@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* MIXINS */
 html {
   /*hide horizontal scrollbar */
   overflow-x: hidden;
@@ -155,8 +156,8 @@ body {
   grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   background-color: #f5f5f5; }
   .article-header__logo {
     background-color: #f5f5f5; }
@@ -234,6 +235,7 @@ body {
     .info {
       display: flex;
       justify-content: center;
+      align-items: center;
       position: relative;
       margin-top: 0;
       margin-bottom: 1rem; }
@@ -265,6 +267,7 @@ body {
 .info-date {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   padding-bottom: 1rem;
   font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
@@ -336,6 +339,7 @@ body {
 .info-location {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 5.5rem;
   padding: 0.5rem 1.5rem;
@@ -481,6 +485,7 @@ strong {
 /* TEXT HIGHLIGHT */
 .highlight {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 2em 0; }
@@ -578,6 +583,7 @@ strong {
 /* CALLOUT */
 .callout {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-end;
   position: relative;
@@ -592,20 +598,18 @@ strong {
       width: 70vw; } }
   @media screen and (max-width: 1036px) {
     .callout {
-      align-items: center;
       width: 80vw; } }
   @media screen and (max-width: 768px) {
     .callout {
+      display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       margin: 2rem 0;
       padding: 2rem; } }
   .callout__wrapper {
     flex-basis: 50%; }
     @media screen and (max-width: 1200px) {
-      .callout__wrapper {
-        flex-basis: 60%; } }
-    @media screen and (max-width: 1036px) {
       .callout__wrapper {
         flex-basis: 60%; } }
     @media screen and (max-width: 768px) {
@@ -701,14 +705,14 @@ strong {
 
 /* TOP BUTTON - fixed */
 .top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1.8em;
   height: 1.8em;
   position: fixed;
   right: 1vw;
   bottom: 4vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 5px;
   background-color: #ffbd24;
   z-index: 1; }
@@ -743,6 +747,7 @@ strong {
       max-width: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center; } }
   @media screen and (max-width: 500px) {
     .footer {

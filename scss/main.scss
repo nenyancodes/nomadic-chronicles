@@ -1,3 +1,18 @@
+/* MIXINS */
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 html {
   /*hide horizontal scrollbar */
   overflow-x: hidden;
@@ -77,9 +92,7 @@ body {
 /* NAVIGATION */
 
 .navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   width: 100%;
   height: 8rem;
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
@@ -204,10 +217,7 @@ body {
 
 .article-header {
   grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  @include flex(column, flex-start, center);
   background-color: #f5f5f5;
 
   &__logo {
@@ -296,8 +306,7 @@ body {
   margin-top: 1em;
 
   @media screen and (max-width: 1036px) {
-    display: flex;
-    justify-content: center;
+    @include flexCenter;
     position: relative;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -333,9 +342,7 @@ body {
 /* date */
 
 .info-date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, flex-start, center);
   padding-bottom: 1rem;
   font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
   font-weight: normal;
@@ -370,10 +377,7 @@ body {
 @media screen and (max-width: 1036px) {
   .info-date {
     width: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    @include flex(row, flex-end, center);
     padding-bottom: 0;
     padding-right: 2rem;
   }
@@ -421,9 +425,7 @@ body {
 /* location */
 
 .info-location {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, flex-start, center);
   width: 5.5rem;
   padding: 0.5rem 1.5rem;
   border-top: 3px dotted #3a3a3c;
@@ -435,10 +437,7 @@ body {
   text-transform: uppercase;
 
   @media screen and (max-width: 1036px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    @include flex(row, flex-start, center);
     width: 150px;
     padding-left: 2.5rem;
     border-top: none;
@@ -591,9 +590,7 @@ strong {
 /* TEXT HIGHLIGHT */
 
 .highlight {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include flex(row, space-around, center);
   margin: 2em 0;
 
   @media screen and (max-width: 768px) {
@@ -718,9 +715,7 @@ strong {
 /* CALLOUT */
 
 .callout {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  @include flex(row, center, flex-end);
   position: relative;
   width: 55vw;
   margin: 4rem 0;
@@ -733,12 +728,10 @@ strong {
     width: 70vw;
   }
   @media screen and (max-width: 1036px) {
-    align-items: center;
     width: 80vw;
   }
   @media screen and (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, center);
     margin: 2rem 0;
     padding: 2rem;
   }
@@ -746,9 +739,6 @@ strong {
   &__wrapper {
     flex-basis: 50%;
     @media screen and (max-width: 1200px) {
-      flex-basis: 60%;
-    }
-    @media screen and (max-width: 1036px) {
       flex-basis: 60%;
     }
     @media screen and (max-width: 768px) {
@@ -822,9 +812,7 @@ strong {
 }
 
 .callout div:first-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   position: absolute;
   top: -25px;
   left: 35px;
@@ -857,14 +845,12 @@ strong {
 /* TOP BUTTON - fixed */
 
 .top-button {
+  @include flexCenter;
   width: 1.8em;
   height: 1.8em;
   position: fixed;
   right: 1vw;
   bottom: 4vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 5px;
   background-color: #ffbd24;
   z-index: 1;
@@ -903,9 +889,7 @@ strong {
   @media screen and (max-width: 768px) {
     width: 100vw;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, center);
   }
   @media screen and (max-width: 500px) {
     padding-top: 2rem;
