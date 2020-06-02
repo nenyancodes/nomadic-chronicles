@@ -1,3 +1,11 @@
+/* VARIABLES */
+$col-pop: #ffbd24;
+$col-white: #fff;
+$col-black: #000;
+$light-grey: #f5f5f5;
+$dark-grey: #3a3a3c;
+$text: #303030;
+
 /* MIXINS */
 
 @mixin flexCenter {
@@ -34,12 +42,12 @@ body {
     "main"
     "footer";
   align-content: space-between;
-  background-color: #fff;
+  background-color: $col-white;
   font-family: "EB Garamond", "PT Serif", serif;
   font-size: 20px;
   line-height: 1.6em;
   text-align: justify;
-  color: #303030;
+  color: $text;
 
   @media screen and (max-width: 1200px) {
     font-size: 18px;
@@ -58,7 +66,7 @@ body {
   grid-area: header;
   height: 99.95vh;
   width: 100%;
-  background-color: #000;
+  background-color: $col-black;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
@@ -86,7 +94,7 @@ body {
   top: 90vh;
   border-left: 49.5vw solid transparent;
   border-right: 49.5vw solid transparent;
-  border-bottom: 10vh solid #f5f5f5;
+  border-bottom: 10vh solid $light-grey;
 } */
 
 /* NAVIGATION */
@@ -121,10 +129,10 @@ body {
   position: fixed;
   right: 15px;
   top: 15px;
-  color: white;
+  color: $col-white;
   width: 20px;
   height: 20px;
-  background-color: #ffbd24;
+  background-color: $col-pop;
   border: none;
   line-height: 20px;
   // z-index: 5;
@@ -145,7 +153,7 @@ body {
     width: 100vw;
     height: 80vh;
     @include flex(column, flex-start, center);
-    background: #ffbd24;
+    background: $col-pop;
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 76%, 0% 80%);
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 70%, 0% 80%);
     display: visible;
@@ -157,7 +165,7 @@ body {
     margin: 0.5rem 1.5rem;
     font-size: 1rem;
     line-height: 1rem;
-    color: #fff;
+    color: $col-white;
   }
 
   .navigation__logo {
@@ -176,7 +184,7 @@ body {
   left: 0px;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: $col-white;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -222,7 +230,7 @@ body {
   justify-items: center;
   width: 100%;
   padding: 3em 0 6em 0;
-  background-color: #f5f5f5;
+  background-color: $light-grey;
   /* 2 sposób na zrobienie trójkąta-wielokąta w CSS */
   clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 50% 85%, 0% 100%);
   -webkit-clip-path: polygon(
@@ -268,10 +276,10 @@ body {
 .article-header {
   grid-column: 1 / -1;
   @include flex(column, flex-start, center);
-  background-color: #f5f5f5;
+  background-color: $light-grey;
 
   &__logo {
-    background-color: #f5f5f5;
+    background-color: $light-grey;
     @media screen and (max-width: 340px) {
       display: none;
     }
@@ -279,12 +287,12 @@ body {
 
   &__title {
     padding: 1rem 0 1.5rem 0;
-    background-color: #f5f5f5;
+    background-color: $light-grey;
     text-align: center;
     font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: #3a3a3c;
+    color: $dark-grey;
     text-transform: uppercase;
     @media screen and (max-width: 1036px) {
       padding-bottom: 1rem;
@@ -369,7 +377,7 @@ body {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background-color: #3a3a3c;
+      background-color: $dark-grey;
       @media screen and (max-width: 768px) {
         top: 0.75rem;
         width: 8px;
@@ -396,7 +404,7 @@ body {
   padding-bottom: 1rem;
   font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
   font-weight: normal;
-  color: #3a3a3c;
+  color: $dark-grey;
   text-transform: uppercase;
   text-align: justify;
 }
@@ -478,12 +486,12 @@ body {
   @include flex(column, flex-start, center);
   width: 5.5rem;
   padding: 0.5rem 1.5rem;
-  border-top: 3px dotted #3a3a3c;
-  border-bottom: 3px dotted #3a3a3c;
+  border-top: 3px dotted $dark-grey;
+  border-bottom: 3px dotted $dark-grey;
   font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
   font-size: 0.6em;
   line-height: 1.4em;
-  color: #3a3a3c;
+  color: $dark-grey;
   text-transform: uppercase;
 
   @media screen and (max-width: 1036px) {
@@ -535,11 +543,11 @@ body {
   &__link {
     display: block;
     font-size: 1.3em;
-    color: #303030;
+    color: $text;
     transition: 0.2s;
     &:hover,
     &:active {
-      color: #ffbd24;
+      color: $col-pop;
     }
   }
 }
@@ -590,7 +598,7 @@ body {
 .journal__title {
   font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
   font-weight: 700;
-  color: #3a3a3c;
+  color: $dark-grey;
   text-transform: uppercase;
   text-align: center;
   padding: 1rem 0;
@@ -663,7 +671,7 @@ strong {
     font-family: "Roboto Condensed";
     font-weight: bold;
     text-transform: uppercase;
-    color: #3a3a3c;
+    color: $dark-grey;
     text-align: center;
 
     @media screen and (max-width: 768px) {
@@ -770,7 +778,7 @@ strong {
   width: 55vw;
   margin: 4rem 0;
   padding: 4rem;
-  background-color: #f5f5f5;
+  background-color: $light-grey;
   box-shadow: -2px 2px 10px #ddd;
 
   @media screen and (max-width: 1200px) {
@@ -802,7 +810,7 @@ strong {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: right;
-    color: #3a3a3c;
+    color: $dark-grey;
     text-transform: uppercase;
     @media screen and (max-width: 600px) {
       font-size: 1rem;
@@ -820,7 +828,7 @@ strong {
     font-family: "Roboto Condensed", Helvetica, Verdana, sans-serif;
     font-size: 0.8rem;
     line-height: 1.4em;
-    color: #3a3a3c;
+    color: $dark-grey;
     text-align: right;
     padding-top: 1rem;
     @media screen and (max-width: 500px) {
@@ -902,7 +910,7 @@ strong {
   right: 1vw;
   bottom: 4vh;
   border-radius: 5px;
-  background-color: #ffbd24;
+  background-color: $col-pop;
   z-index: 1;
 
   @media screen and (max-width: 600px) {
@@ -913,7 +921,7 @@ strong {
   }
 
   &__text {
-    color: white;
+    color: $col-white;
 
     @media screen and (max-width: 600px) {
       font-size: 1rem;
@@ -989,7 +997,7 @@ strong {
     }
 
     &:hover {
-      color: #ffbd24;
+      color: $col-pop;
     }
   }
 }
