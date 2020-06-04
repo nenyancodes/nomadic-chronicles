@@ -86,11 +86,41 @@ body {
 
 /* NAVIGATION */
 
+.hamburger {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  color: $col-white;
+  width: 20px;
+  height: 20px;
+  background-color: $col-pop;
+  border: none;
+  line-height: 20px;
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+    z-index: 10;
+  }
+}
+
 .navigation {
   @include flexCenter;
   width: 100%;
   height: 8rem;
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    &--open {
+      width: 100vw;
+      height: 80vh;
+      @include flex(column, flex-start, center);
+      background: $col-pop;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 76%, 0% 80%);
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 70%, 0% 80%);
+      display: visible;
+    }
+  }
 }
 
 .navigation__link {
@@ -105,56 +135,20 @@ body {
   color: #eeeeee;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-.navigation__logo {
-  width: 250px;
-  margin: 0.5rem 2rem 0;
-}
-
-.hamburger {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  color: $col-white;
-  width: 20px;
-  height: 20px;
-  background-color: $col-pop;
-  border: none;
-  line-height: 20px;
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .hamburger {
-    display: block;
-    z-index: 10;
-  }
-
-  .navigation {
-    display: none;
-  }
-
-  .navigation--open {
-    width: 100vw;
-    height: 80vh;
-    @include flex(column, flex-start, center);
-    background: $col-pop;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 76%, 0% 80%);
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 70%, 0% 80%);
-    display: visible;
-  }
-
-  .navigation__link {
-    display: block;
+  @media screen and (max-width: 767px) {
     padding: 0.6rem 0;
     margin: 0.5rem 1.5rem;
     font-size: 1rem;
     line-height: 1rem;
     color: $col-white;
   }
+}
 
-  .navigation__logo {
+.navigation__logo {
+  width: 250px;
+  margin: 0.5rem 2rem 0;
+  @media screen and (max-width: 767px) {
     order: -1;
     width: 200px;
     margin: 0.5rem 2rem 2rem;
