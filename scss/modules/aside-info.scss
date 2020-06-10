@@ -1,0 +1,160 @@
+/* ASIDE - INFO */
+
+.info {
+  width: 100px;
+  grid-column: 1 / 2;
+  display: grid;
+  justify-items: center;
+  justify-content: end;
+  align-content: start;
+  margin-top: 1em;
+
+  @media screen and (max-width: 1036px) {
+    @include flexCenter;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0.8rem;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $dark-grey;
+      @media screen and (max-width: 768px) {
+        top: 0.75rem;
+        width: 8px;
+        height: 8px;
+      }
+      @media screen and (max-width: 320px) {
+        top: 0.8rem;
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+
+  @media screen and(max-width: 420px) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* date */
+
+.info-date {
+  @include flex(column, flex-start, center);
+  padding-bottom: 1rem;
+  font-family: $font-title;
+  font-weight: normal;
+  color: $dark-grey;
+  text-transform: uppercase;
+  text-align: justify;
+  @media screen and (max-width: 1036px) {
+    width: 150px;
+    @include flex(row, flex-end, center);
+    padding-bottom: 0;
+    padding-right: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    padding-right: 1rem;
+  }
+  @media screen and (max-width: 320px) {
+    padding-right: 0.3rem;
+  }
+  @media screen and (max-width: 320px) {
+    padding-right: 0.3rem;
+  }
+
+  &__month {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__day {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    overflow: hidden;
+  }
+
+  &__year {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__month,
+  &__day,
+  &__year {
+    @media screen and (max-width: 1036px) {
+      display: inline-block;
+      width: auto;
+      margin: 0 0.2rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      white-space: nowrap;
+      overflow: visible;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 0.7rem;
+      line-height: 0.9rem;
+    }
+  }
+}
+
+/* location */
+
+.info-location {
+  @include flex(column, flex-start, center);
+  width: 5.5rem;
+  padding: 0.5rem 1.5rem;
+  border-top: 3px dotted $dark-grey;
+  border-bottom: 3px dotted $dark-grey;
+  font-family: $font-title;
+  font-size: 0.6em;
+  line-height: 1.4em;
+  color: $dark-grey;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1036px) {
+    @include flex(row, flex-start, center);
+    width: 150px;
+    padding-left: 2.5rem;
+    border-top: none;
+    border-bottom: none;
+    font-size: 1rem;
+    line-height: 1.2rem;
+
+    &__country {
+      padding-right: 0.3rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    padding-left: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 100px;
+    padding-left: 1.2rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+}

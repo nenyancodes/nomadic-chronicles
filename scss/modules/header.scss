@@ -1,0 +1,127 @@
+/* COVER & NAVIGATION */
+
+.cover {
+  grid-area: header;
+  height: 99.95vh;
+  width: 100%;
+  background-color: $col-black;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 1036px) {
+    height: 89.95vh;
+  }
+
+  &--chinese-teahouse {
+    background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
+    @media screen and (max-width: 1036px) {
+      background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
+    }
+  }
+}
+
+/* NAVIGATION */
+
+.hamburger {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  color: $col-white;
+  width: 20px;
+  height: 20px;
+  background-color: $col-pop;
+  border: none;
+  line-height: 20px;
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+    z-index: 10;
+  }
+}
+
+.navigation {
+  @include flexCenter;
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    &--open {
+      width: 100vw;
+      height: 80vh;
+      @include flex(column, flex-start, center);
+      background: $col-pop;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 76%, 0% 80%);
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 70%, 0% 80%);
+      display: visible;
+    }
+  }
+}
+
+.navigation__logo {
+  width: 250px;
+  margin: 0.5rem 2rem 0;
+  @media screen and (max-width: 767px) {
+    order: -1;
+    width: 200px;
+    margin: 0.5rem 2rem 2rem;
+  }
+}
+
+/* nav links & border transformations */
+
+.navigation__link {
+  position: relative;
+  display: block;
+  padding: 0.2rem 0;
+  margin: 0 1.5rem;
+  font-family: Helvetica, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #eeeeee;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media screen and (max-width: 767px) {
+    padding: 0.6rem 0;
+    margin: 0.5rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: $col-white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: $col-white;
+    opacity: 0;
+    transition: all 0.3s;
+    top: 0px;
+    transform: translateY(-10px);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: $col-white;
+    opacity: 0;
+    transition: all 0.3s;
+    bottom: 0px;
+    transform: translateY(10px);
+  }
+
+  &:hover:before,
+  &:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
