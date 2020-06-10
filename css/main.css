@@ -300,65 +300,59 @@ body {
   color: #3a3a3c;
   text-transform: uppercase;
   text-align: justify; }
-
-.info-date__month {
-  display: inline-block;
-  width: 100%;
-  overflow: hidden; }
-
-.info-date__day {
-  font-size: 2.8rem;
-  line-height: 2.8rem;
-  display: inline-block;
-  width: 100%;
-  font-weight: bold;
-  overflow: hidden; }
-
-.info-date__year {
-  font-size: 1rem;
-  line-height: 1.8rem;
-  display: inline-block;
-  width: 100%;
-  overflow: hidden; }
-
-@media screen and (max-width: 1036px) {
-  .info-date {
-    width: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 0;
-    padding-right: 2rem; }
-  .info-date__month,
-  .info-date__day,
-  .info-date__year {
+  @media screen and (max-width: 1036px) {
+    .info-date {
+      width: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 0;
+      padding-right: 2rem; } }
+  @media screen and (max-width: 768px) {
+    .info-date {
+      width: 100px;
+      padding-right: 1rem; } }
+  @media screen and (max-width: 320px) {
+    .info-date {
+      padding-right: 0.3rem; } }
+  @media screen and (max-width: 320px) {
+    .info-date {
+      padding-right: 0.3rem; } }
+  .info-date__month {
     display: inline-block;
-    width: auto;
-    margin: 0 0.2rem;
+    width: 100%;
+    overflow: hidden; }
+  .info-date__day {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    overflow: hidden; }
+  .info-date__year {
     font-size: 1rem;
-    line-height: 1.2rem;
-    white-space: nowrap;
-    overflow: visible; } }
-
-@media screen and (max-width: 768px) {
-  .info-date {
-    width: 100px;
-    padding-right: 1rem; }
-  .info-date__month,
-  .info-date__day,
-  .info-date__year {
-    font-size: 0.8rem;
-    line-height: 1rem; } }
-
-@media screen and (max-width: 320px) {
-  .info-date {
-    padding-right: 0.3rem; }
-  .info-date__month,
-  .info-date__day,
-  .info-date__year {
-    font-size: 0.7rem;
-    line-height: 0.9rem; } }
+    line-height: 1.8rem;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden; }
+  @media screen and (max-width: 1036px) {
+    .info-date__month, .info-date__day, .info-date__year {
+      display: inline-block;
+      width: auto;
+      margin: 0 0.2rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      white-space: nowrap;
+      overflow: visible; } }
+  @media screen and (max-width: 768px) {
+    .info-date__month, .info-date__day, .info-date__year {
+      font-size: 0.8rem;
+      line-height: 1rem; } }
+  @media screen and (max-width: 320px) {
+    .info-date__month, .info-date__day, .info-date__year {
+      font-size: 0.7rem;
+      line-height: 0.9rem; } }
 
 /* location */
 .info-location {
