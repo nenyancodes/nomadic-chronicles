@@ -1,0 +1,23 @@
+{
+  "name": "nomadic-chronicles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "npx node-sass -w scss/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nenyancodes/nomadic-chronicles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nenyancodes/nomadic-chronicles/issues"
+  },
+  "homepage": "https://github.com/nenyancodes/nomadic-chronicles#readme",
+  "devDependencies": {
+    "node-sass": "4.14.1"
+  }
+}
