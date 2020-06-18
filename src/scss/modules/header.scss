@@ -15,9 +15,9 @@
   }
 
   &--chinese-teahouse {
-    background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
+    background-image: url("../assets/img/china/sichuan17-2048.jpg");
     @media screen and (max-width: 1036px) {
-      background-image: url("/images/china/teahouse/sichuan17-2048.jpg");
+      background-image: url("../assets/img/china/sichuan17-2048.jpg");
     }
   }
 }
