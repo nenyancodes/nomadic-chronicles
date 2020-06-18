@@ -36,6 +36,16 @@ module.exports = {
               },
               {
                 tag: "img",
+                attribute: "srcset",
+                type: "srcset",
+              },
+              {
+                tag: "source",
+                attribute: "srcset",
+                type: "srcset",
+              },
+              {
+                tag: "img",
                 attribute: "data-gallery-src",
                 type: "src",
               },
@@ -67,9 +77,7 @@ module.exports = {
         {
           from: "public",
           globOptions: {
-            ignore: [
-              '**/*.DS_Store'
-            ],
+            ignore: ["**/*.DS_Store"],
           },
         },
       ],
