@@ -1,13 +1,57 @@
 @import "~normalize.css";
 
-@import "_variables";
-@import "modules/hello.scss";
+@import "modules/_variables.scss";
+@import "modules/_mixins.scss";
+
+html {
+  /*hide horizontal scrollbar */
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  align-content: space-between;
+  background-color: $col-white;
+  font-family: $font-text;
+  font-size: 20px;
+  line-height: 1.6em;
+  text-align: justify;
+  color: $text;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 18px;
+  }
 }
+
+.main {
+  grid-area: main;
+  width: 100%;
+  position: relative;
+}
+
+@import "modules/header.scss";
+
+@import "modules/article.scss";
+@import "modules/article-header.scss";
+@import "modules/aside-info.scss";
+@import "modules/aside-socialmedia.scss";
+
+@import "modules/journal.scss";
+@import "modules/gallery.scss";
+@import "modules/callout.scss";
+
+@import "modules/top-button.scss";
+@import "modules/footer.scss";

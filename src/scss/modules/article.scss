@@ -1,0 +1,58 @@
+/* JOURNAL ARTICLE & WRAPPER */
+
+.article {
+  width: 100%;
+  max-width: 3072px;
+}
+
+.wrapper {
+  position: absolute;
+  top: -5em;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-column-gap: 32px;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  padding: 3em 0 6em 0;
+  background-color: $light-grey;
+  /* sposób na zrobienie trójkąta-wielokąta w CSS */
+  clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 50% 85%, 0% 100%);
+  -webkit-clip-path: polygon(
+    0% 15%,
+    50% 0%,
+    100% 15%,
+    100% 100%,
+    50% 85%,
+    0% 100%
+  );
+
+  @media screen and (max-width: 1036px) {
+    max-width: 100vw;
+    top: -6em;
+    grid-template-columns: minmax(200px, 1fr);
+    clip-path: polygon(0% 10%, 50% 0%, 100% 10%, 100% 100%, 50% 90%, 0% 100%);
+    -webkit-clip-path: polygon(
+      0% 10%,
+      50% 0%,
+      100% 10%,
+      100% 100%,
+      50% 90%,
+      0% 100%
+    );
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1.5rem 0;
+    clip-path: polygon(0% 5%, 50% 0%, 100% 5%, 100% 100%, 50% 95%, 0% 100%);
+    -webkit-clip-path: polygon(
+      0% 10%,
+      50% 0%,
+      100% 10%,
+      100% 100%,
+      50% 90%,
+      0% 100%
+    );
+  }
+}

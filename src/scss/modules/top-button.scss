@@ -1,0 +1,28 @@
+/* TOP BUTTON - fixed */
+
+.top-button {
+  @include flexCenter;
+  width: 1.8em;
+  height: 1.8em;
+  position: fixed;
+  right: 1vw;
+  bottom: 4vh;
+  border-radius: 5px;
+  background-color: $col-pop;
+  z-index: 1;
+
+  @media screen and (max-width: 600px) {
+    width: 1.5em;
+    height: 1.5em;
+    right: 1vw;
+    bottom: 2vh;
+  }
+
+  &__text {
+    color: $col-white;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+}
