@@ -5,7 +5,7 @@ module.exports = {
   /* here you can define another js file */
   entry: {
     index: "./src/js/index.js",
-    another: "./src/js/another.js",
+    chinateahouse: "./src/js/china-teahouse.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -49,7 +49,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "img/[name].[hash:8].[ext]",
+              name: "img/[folder]/[name].[hash:8].[ext]",
             },
           },
         ],
@@ -83,10 +83,10 @@ module.exports = {
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/another.html",
+      template: "./src/pages/china-teahouse.html",
       inject: true,
-      chunks: ["index", "another"],
-      filename: "another.html",
+      chunks: ["index", "china-teahouse"],
+      filename: "china-teahouse.html",
     }),
   ],
 };
