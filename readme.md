@@ -25,8 +25,12 @@ Created by Anna Wójtowicz alias __@nenyancodes__ - feel free to contact me here
 
 ---
 
+<br>
+<br>
+
 Overally
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
+
 Except for the configuration of Webpack which was <br>
 [![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com)
 
