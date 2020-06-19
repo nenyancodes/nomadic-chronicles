@@ -1,5 +1,8 @@
 
 # Nomadic Chronicles 
+[![Sass](https://img.shields.io/badge/<Sass>-<v^1.26.5>-<#CC6699>.svg)](https://shields.io/)
+
+## General info
 Nomadic Chronicles is my personal website centered around my two biggest passions - travelling and photography 
 
 ## Technologies
@@ -25,5 +28,8 @@ Project is: _in progress_
 Created by Anna Wójtowicz alias __@nenyancodes__ - feel free to contact me here on [GitHub](https://github.com/nenyancodes).
 
 You can also find me on [Twitter](https://twitter.com/nenyancodes).
+
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
 
 
