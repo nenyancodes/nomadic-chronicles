@@ -20,15 +20,14 @@ Project is: _in progress_
 
 
 ## Contact
-Created by Anna Wójtowicz alias __@nenyancodes__ - feel free to contact me here on [GitHub](https://github.com/nenyancodes). You can also find me on [Twitter](https://twitter.com/nenyancodes).
+Created by Anna Wójtowicz alias __@nenyancodes__ - feel free to contact me here on [GitHub](https://github.com/nenyancodes). 
+<br> You can also find me on [Twitter](https://twitter.com/nenyancodes).
 
 
 ---
----
 
-Overally   
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
-Except for the configuration of Webpack which was   
+Overally
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)<br>
+Except for the configuration of Webpack which was <br>
 [![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com)
-
 
