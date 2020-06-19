@@ -1,6 +1,6 @@
 
 # Nomadic Chronicles 
-[![Sass](https://img.shields.io/badge/[![S](https://simpleicons.org/icons/sass.svg)]Sass-v^1.26.5-#CC6699.svg)](https://shields.io/)
+[![Sass](https://img.shields.io/badge/Sass-v^1.26.5-#CC6699.svg)](https://shields.io/)
 
 ## General info
 Nomadic Chronicles is my personal website centered around my two biggest passions - travelling and photography 
