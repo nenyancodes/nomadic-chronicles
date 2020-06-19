@@ -14,14 +14,16 @@ Link to a demo version: https://nenyancodes.github.io/nomadic-chronicles/
 Project is: _in progress_
 
 ## TODO
-[] design homepage layout
-[] create grid photo gallery
-[] add next journal posts
-[] add hamburger menu animation
-[] fix margins/paddings in blog post layout
+* [ ] design homepage layout
+* [ ] create grid photo gallery
+* [ ] add next journal posts
+* [ ] add hamburger menu animation
+* [ ] fix margins/paddings in blog post layout
 
 
 ## Contact
-Created by Anna Wójtowicz alias @nenyancodes - feel free to contact me here on [GitHub](https://github.com/nenyancodes). You can also find me on [Twitter](https://twitter.com/nenyancodes)
+Created by Anna Wójtowicz alias __@nenyancodes__ - feel free to contact me here on [GitHub](https://github.com/nenyancodes).
+
+You can also find me on [Twitter](https://twitter.com/nenyancodes).
 
 
