@@ -9,7 +9,7 @@ Nomadic Chronicles is my personal website, consiting of a travel journal and a p
 Live: https://nenyancodes.github.io/nomadic-chronicles/ 
 
 ## Status
-Project is: _in progress_
+Project is: _in progress_ [![Under Construction](doc/img/under-construction.svg)]
 
 ## TODO
 * [ ] design layout of the homepage
