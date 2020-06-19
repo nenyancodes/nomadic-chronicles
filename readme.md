@@ -1,14 +1,9 @@
 
 # Nomadic Chronicles 
-[![Webpack](https://img.shields.io/badge/Webpack-4.43.0-8dd6f9.svg)](https://shields.io/) [![npm](https://img.shields.io/badge/npm-v6.9.0-cb3837.svg)](https://shields.io/) [![Babel](https://img.shields.io/badge/Babel-v^7.10.1-f9dc3e.svg)](https://shields.io/) [![Sass](https://img.shields.io/badge/Sass-v^1.26.5-ff69b4.svg)](https://shields.io/) [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-f7df1e.svg)](https://shields.io/) [![CSS](https://img.shields.io/badge/CSS3-1572B6.svg)](https://shields.io/) [![CSS](https://img.shields.io/badge/HTML5-e34f26.svg)](https://shields.io/)
-
-## General info
 Nomadic Chronicles is my personal website centered around my two biggest passions - travelling and photography 
 
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+[![Webpack](https://img.shields.io/badge/Webpack-4.43.0-8dd6f9.svg)](https://shields.io/) [![npm](https://img.shields.io/badge/npm-v6.9.0-cb3837.svg)](https://shields.io/) [![Babel](https://img.shields.io/badge/Babel-v^7.10.1-f9dc3e.svg)](https://shields.io/) [![Sass](https://img.shields.io/badge/Sass-v^1.26.5-ff69b4.svg)](https://shields.io/) [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-f7df1e.svg)](https://shields.io/) [![CSS](https://img.shields.io/badge/CSS3-1572B6.svg)](https://shields.io/) [![CSS](https://img.shields.io/badge/HTML5-e34f26.svg)](https://shields.io/)
 
 ## Demo
 Link to a demo version: https://nenyancodes.github.io/nomadic-chronicles/ 
