@@ -23,9 +23,10 @@ Project is: _in progress_
 Created by Anna Wójtowicz alias __@nenyancodes__ - feel free to contact me here on [GitHub](https://github.com/nenyancodes). 
 <br> You can also find me on [Twitter](https://twitter.com/nenyancodes).
 
+<br>
+
 ---
 
-<br>
 <br>
 
 Overally
