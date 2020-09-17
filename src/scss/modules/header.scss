@@ -41,34 +41,53 @@
     display: block;
     z-index: 10;
   }
-}
 
-.hamburger span,
-.hamburger span::before,
-.hamburger span::after {
-  width: 20px;
-  height: 2px;
-  background: white;
-  position: absolute;
-  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out,
-    background 0.3s ease-in-out;
-}
+  &-line {
+    top: 50%;
+    right: 8px;
+    width: 20px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out,
+      background 0.3s ease-in-out;
 
-.hamburger span {
-  top: 50%;
-  right: 8px;
-}
+    &::before {
+      content: "";
+      top: -6px;
+      right: 0;
+      width: 20px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      transition: width 0.3s ease-in-out, transform 0.3s ease-in-out,
+        background 0.3s ease-in-out;
+    }
 
-.hamburger span::before {
-  content: "";
-  top: -8px;
-  right: 0;
-}
+    &::after {
+      content: "";
+      top: 6px;
+      right: 0;
+      width: 20px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      transition: width 0.3s ease-in-out, transform 0.3s ease-in-out,
+        background 0.3s ease-in-out;
+    }
+  }
 
-.hamburger span::after {
-  content: "";
-  top: 8px;
-  right: 0;
+  &--clicked .hamburger-line {
+    background: transparent;
+  }
+
+  &--clicked .hamburger-line:before {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  &--clicked .hamburger-line:after {
+    transform: translateY(-6px) rotate(-45deg);
+  }
 }
 
 .navigation {

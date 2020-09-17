@@ -28,6 +28,7 @@ const hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", function () {
   const nav = document.querySelector(".navigation--js");
   nav.classList.toggle("navigation--open");
+  hamburger.classList.toggle("hamburger--clicked");
 });
 
 // const greetUser = () => {
