@@ -29,16 +29,46 @@
   right: 15px;
   top: 15px;
   color: $col-white;
-  width: 20px;
-  height: 20px;
+  width: 36px;
+  height: 36px;
   background-color: $col-pop;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
   line-height: 20px;
   display: none;
   @media screen and (max-width: 767px) {
     display: block;
     z-index: 10;
   }
+}
+
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+  width: 20px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out,
+    background 0.3s ease-in-out;
+}
+
+.hamburger span {
+  top: 50%;
+  right: 8px;
+}
+
+.hamburger span::before {
+  content: "";
+  top: -8px;
+  right: 0;
+}
+
+.hamburger span::after {
+  content: "";
+  top: 8px;
+  right: 0;
 }
 
 .navigation {
