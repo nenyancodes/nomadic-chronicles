@@ -97,9 +97,9 @@
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
   @media screen and (max-width: 767px) {
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     position: fixed;
-    top: -80vh;
+    top: -60vh;
     left: 0;
     z-index: 5;
     @include flex(column, flex-start, center);
@@ -107,6 +107,10 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 76%, 0% 80%);
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 70%, 0% 80%);
     transition: all 0.3s ease-in-out;
+    @media screen and (max-height: 680px) {
+      height: 80vh;
+      top: -80vh;
+    }
 
     &--open {
       position: fixed;
