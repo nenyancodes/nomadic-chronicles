@@ -102,6 +102,10 @@
       width: 100vw;
       height: 80vh;
       @include flex(column, flex-start, center);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5;
       background: $col-pop;
       clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 76%, 0% 80%);
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 70%, 0% 80%);
