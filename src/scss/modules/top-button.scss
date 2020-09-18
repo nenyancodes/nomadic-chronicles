@@ -12,10 +12,7 @@
   z-index: 1;
 
   @media screen and (max-width: 600px) {
-    width: 1.5em;
-    height: 1.5em;
-    right: 1vw;
-    bottom: 2vh;
+    display: none;
   }
 
   &__text {
