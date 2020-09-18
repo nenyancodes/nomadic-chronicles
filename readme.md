@@ -15,7 +15,7 @@ Live: https://nenyancodes.github.io/nomadic-chronicles/
 * [ ] design layout of the homepage
 * [ ] create grid photo gallery
 * [ ] add next journal posts
-* [ ] add hamburger menu animation
+* [x] add hamburger menu animation
 * [ ] fix margins/paddings in blog post layout
 
 
